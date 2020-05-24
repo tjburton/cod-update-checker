@@ -65,8 +65,8 @@ class CheckLatestCODUpdate:
         return formatted_date
 
     def save_date_of_most_recent_patch_notes(self, date):
-        print(f"Saving most recent patch date to file: {self.current_patch_date}")
-        self.output_message_to_logfile(f"{datetime.today()}: Saving most recent patch date to file: {self.current_patch_date}")
+        print(f"Saving most recent patch date to file: {date}")
+        self.output_message_to_logfile(f"{datetime.today()}: Saving most recent patch date to file: {date}")
         f = open(f"{self.loc}resources/patch-date.txt", "w")
         f.write(date)
         f.close()
