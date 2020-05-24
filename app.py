@@ -6,7 +6,7 @@ import json
 import sys
 
 url = None
-
+location = sys.argv[2]
 
 def query_google():
     print("Querying Google")
@@ -48,13 +48,13 @@ def format_date(first_date, second_date):
 
 def save_date_of_most_recent_patch_notes(date):
     print(f"Saving most recent patch date to file: {current_patch_date}")
-    f = open("patch-date.txt", "w")
+    f = open(f"{location}patch-date.txt", "w")
     f.write(date)
     f.close()
 
 
 def read_date_of_last_patch():
-    f = open("patch-date.txt", "r")
+    f = open(f"{location}patch-date.txt", "r")
     return f.read()
 
 
@@ -115,6 +115,5 @@ if __name__ == '__main__':
     url_is_successful = check_if_new_patch_is_released()
     if url_is_successful:
         send_slack_message(hook)
-
 
 
