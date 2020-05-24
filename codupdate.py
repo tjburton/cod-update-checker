@@ -90,7 +90,7 @@ class CheckLatestCODUpdate:
         if current_date_converted > previous_update_date_converted:
             print("Update now available!")
             self.output_message_to_logfile(f"{datetime.today()}: Update Available!")
-            self.save_date_of_most_recent_patch_notes(current_date, self.loc)
+            self.save_date_of_most_recent_patch_notes(current_date)
             return True
         else:
             print("No update available")
