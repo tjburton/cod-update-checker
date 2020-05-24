@@ -36,7 +36,7 @@ def get_second_part_of_date(response):
             print("Month found!")
             pattern = f'({month}_[0-9].)'
             second_part_of_date = re.search(pattern, response).group(0)
-            if second_part_of_date[:-1].isdigit():
+            if second_part_of_date[-1].isdigit():
                 second_part_of_date = second_part_of_date
             else:
                 second_part_of_date = second_part_of_date[:-1]
