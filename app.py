@@ -6,7 +6,7 @@ import json
 import sys
 
 url = None
-location = sys.argv[2]
+
 
 def query_google():
     print("Querying Google")
@@ -46,22 +46,22 @@ def format_date(first_date, second_date):
     return formatted_date
 
 
-def save_date_of_most_recent_patch_notes(date):
+def save_date_of_most_recent_patch_notes(date, loc):
     print(f"Saving most recent patch date to file: {current_patch_date}")
-    f = open(f"{location}patch-date.txt", "w")
+    f = open(f"{loc}patch-date.txt", "w")
     f.write(date)
     f.close()
 
 
-def read_date_of_last_patch():
-    f = open(f"{location}patch-date.txt", "r")
+def read_date_of_last_patch(loc):
+    f = open(f"{loc}patch-date.txt", "r")
     return f.read()
 
 
-def new_patch_is_released(current_date, previous_update_date):
+def new_patch_is_released(current_date, previous_update_date, loc):
     if datetime.strptime(current_date, "%Y-%m-%d") > datetime.strptime(previous_update_date, "%Y-%m-%d"):
         print("Update now available!")
-        save_date_of_most_recent_patch_notes(current_date)
+        save_date_of_most_recent_patch_notes(current_date, loc)
         return True
     else:
         print("No update available")
@@ -87,8 +87,8 @@ def verify_if_correct_url_is_generated(url):
         return True
 
 
-def check_if_new_patch_is_released():
-    if new_patch_is_released(current_patch_date, last_patch_date):
+def check_if_new_patch_is_released(loc):
+    if new_patch_is_released(current_patch_date, last_patch_date, loc):
         url = generate_patch_notes_url(first_part, second_part)
         verify_url = verify_if_correct_url_is_generated(url)
         return verify_url
@@ -106,13 +106,14 @@ def send_slack_message(hook):
 
 if __name__ == '__main__':
     hook = sys.argv[1]
+    location = sys.argv[2]
     response = query_google()
     call_of_duty_part_url = search_for_cod_patch_notes(response)
     first_part = get_first_part_of_date(call_of_duty_part_url)
     second_part = get_second_part_of_date(call_of_duty_part_url)
     current_patch_date = format_date(first_part, second_part)
-    last_patch_date = read_date_of_last_patch()
-    url_is_successful = check_if_new_patch_is_released()
+    last_patch_date = read_date_of_last_patch(location)
+    url_is_successful = check_if_new_patch_is_released(location)
     if url_is_successful:
         send_slack_message(hook)
 
