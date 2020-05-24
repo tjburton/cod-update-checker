@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/bin/env python
 import requests
 import re
 from months import months
