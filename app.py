@@ -2,6 +2,8 @@ import requests
 import re
 from months import months
 from datetime import datetime
+import json
+import sys
 
 url = None
 
@@ -92,15 +94,18 @@ def check_if_new_patch_is_released():
         return verify_url
 
 
-def output_message_to_properties(url):
-    message = f"A new Call of Duty Warzone update is now available\nurl={url}"
-    print(f"Writing message to properties file: {message}")
-    f = open("message.properties", "w")
-    f.write(f"message={message}")
-    f.close()
+def send_slack_message(hook):
+    print("Sending Slack message...")
+    slack_hook = f"https://hooks.slack.com/services/{hook}"
+    message = f"A new Call of Duty Warzone update is now available:\n{url}"
+    payload = {"text": message}
+    json_payload = json.dumps(payload)
+    res = requests.post(slack_hook, data=json_payload)
+    print(res.status_code)
 
 
 if __name__ == '__main__':
+    hook = sys.argv[1]
     response = query_google()
     call_of_duty_part_url = search_for_cod_patch_notes(response)
     first_part = get_first_part_of_date(call_of_duty_part_url)
@@ -109,7 +114,7 @@ if __name__ == '__main__':
     last_patch_date = read_date_of_last_patch()
     url_is_successful = check_if_new_patch_is_released()
     if url_is_successful:
-        output_message_to_properties(url)
+        send_slack_message(hook)
 
 
 
