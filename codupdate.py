@@ -85,7 +85,7 @@ class CheckLatestCODUpdate:
         )
         current_date_converted = datetime.strptime(current_date, "%Y-%m-%d")
         previous_update_date_converted = datetime.strptime(self.previous_patch_date, "%Y-%m-%d")
-        self.output_message_to_logfile(f"{datetime.today()}: Current Date Converted: {current_date_converted}\nPrevious Date Converted: {previous_update_date_converted}")
+        self.output_message_to_logfile(f"{datetime.today()}: Current Date Converted: {current_date_converted}\n{datetime.today()}: Previous Date Converted: {previous_update_date_converted}")
         print(f"Current Date Converted: {current_date_converted}\nPrevious Date Converted: {previous_update_date_converted}")
         if current_date_converted > previous_update_date_converted:
             print("Update now available!")
