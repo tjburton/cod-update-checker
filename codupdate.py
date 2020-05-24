@@ -1,3 +1,4 @@
+#!/usr/bin/python
 import requests
 import re
 from months import months
@@ -18,7 +19,7 @@ class CheckLatestCODUpdate:
         print("Querying Google")
         self.output_message_to_logfile(f"{datetime.today()}: Querying Google")
         res = requests.get("https://www.google.com/search?&q=call+of+duty+patch+notes")
-        self.output_message_to_logfile(f"{datetime.today()}: Google Response:\n{res.content.decode('ISO-8859-1')}")
+        #self.output_message_to_logfile(f"{datetime.today()}: Google Response:\n{res.content.decode('ISO-8859-1')}")
         return res.content.decode("ISO-8859-1")
 
     def search_for_cod_patch_notes(self, res):
