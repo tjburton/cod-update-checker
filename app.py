@@ -66,9 +66,10 @@ def read_date_of_last_patch(loc):
 
 
 def new_patch_is_released(current_date, previous_update_date, loc):
+    print(f"Current Date: {current_date}\nPrevious Date: {previous_update_date}")
     current_date_converted = datetime.strptime(current_date, "%Y-%m-%d")
     previous_update_date_converted = datetime.strptime(previous_update_date, "%Y-%m-%d")
-    print(f"Current Date: {current_date}\nPrevious Date: {previous_update_date}")
+    print(f"Current Date Converted: {current_date_converted}\nPrevious Date Converted: {previous_update_date_converted}")
     if current_date_converted > previous_update_date_converted:
         print("Update now available!")
         save_date_of_most_recent_patch_notes(current_date, loc)
@@ -117,6 +118,7 @@ def send_slack_message(hook):
 if __name__ == '__main__':
     hook = sys.argv[1]
     location = sys.argv[2]
+    location = ""
     response = query_google()
     call_of_duty_part_url = search_for_cod_patch_notes(response)
     first_part = get_first_part_of_date(call_of_duty_part_url)
