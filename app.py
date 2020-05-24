@@ -42,8 +42,7 @@ def get_second_part_of_date(response):
                 second_part_of_date = second_part_of_date[:-1]
             print(second_part_of_date)
             return second_part_of_date
-        else:
-            print("Month not found")
+    print("Month not found")
     return second_part_of_date
 
 
@@ -69,6 +68,7 @@ def read_date_of_last_patch(loc):
 def new_patch_is_released(current_date, previous_update_date, loc):
     current_date = datetime.strptime(current_date, "%Y-%m-%d")
     previous_update_date = datetime.strptime(previous_update_date, "%Y-%m-%d")
+    print(f"Current Date: {current_date}\nPrevious Date: {previous_update_date}")
     if current_date > previous_update_date:
         print("Update now available!")
         save_date_of_most_recent_patch_notes(current_date, loc)
