@@ -16,9 +16,9 @@ def query_google():
 
 def search_for_cod_patch_notes(res):
     print("Searching for COD Patch Notes")
-    pattern = '(url\?q=https:\/\/www\.infinityward\.com\/news\/)(.................................................................)'
+    pattern = '(url\?q=https:\/\/www\.infinityward\.com\/news\/[0-9][0-9][0-9][0-9]-[0-9][0-9]\/MW_Patch_Notes_[A-Z][a-z]..........)'
     x = re.search(pattern, res)
-    return x.group(2)
+    return x.group(0)
 
 
 def get_first_part_of_date(response):
@@ -33,9 +33,17 @@ def get_second_part_of_date(response):
     second_part_of_date = None
     for month in months:
         if month in response:
-            pattern = f'({month}_[0-9][0-9])'
+            print("Month found!")
+            pattern = f'({month}_[0-9].)'
             second_part_of_date = re.search(pattern, response).group(0)
+            if second_part_of_date[:-1].isdigit():
+                second_part_of_date = second_part_of_date
+            else:
+                second_part_of_date = second_part_of_date[:-1]
             print(second_part_of_date)
+            return second_part_of_date
+        else:
+            print("Month not found")
     return second_part_of_date
 
 
