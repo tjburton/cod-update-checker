@@ -66,10 +66,10 @@ def read_date_of_last_patch(loc):
 
 
 def new_patch_is_released(current_date, previous_update_date, loc):
-    current_date = datetime.strptime(current_date, "%Y-%m-%d")
-    previous_update_date = datetime.strptime(previous_update_date, "%Y-%m-%d")
+    current_date_converted = datetime.strptime(current_date, "%Y-%m-%d")
+    previous_update_date_converted = datetime.strptime(previous_update_date, "%Y-%m-%d")
     print(f"Current Date: {current_date}\nPrevious Date: {previous_update_date}")
-    if current_date > previous_update_date:
+    if current_date_converted > previous_update_date_converted:
         print("Update now available!")
         save_date_of_most_recent_patch_notes(current_date, loc)
         return True
