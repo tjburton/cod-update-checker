@@ -9,7 +9,7 @@ import json
 class CheckLatestCODUpdate:
     def __init__(self):
         self.url = None
-        self.loc = None
+        self.loc = "./"
         self.current_patch_date = None
         self.previous_date = None
         self.first_date = None
@@ -43,10 +43,11 @@ class CheckLatestCODUpdate:
         self.output_message_to_logfile(f"{datetime.today()}: Getting second part of date")
         for month in months:
             if month in response:
-                print("Month found!")
+                print(f"Month found: {month}")
                 self.output_message_to_logfile(f"{datetime.today()}: Month found {month}")
                 pattern = f'({month}_[0-9].)'
                 second_part_of_date = re.search(pattern, response).group(0)
+
                 if second_part_of_date[-1].isdigit():
                     second_part_of_date = second_part_of_date
                 else:
@@ -142,6 +143,7 @@ class CheckLatestCODUpdate:
         f.close()
 
     def output_message_to_logfile(self, message):
+        self.loc = "./"
         f = open(f"{self.loc}resources/log.txt", "a")
         f.write(f"{message}\n")
         f.close()
