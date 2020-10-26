@@ -37,3 +37,195 @@ Previous Date Converted: 2020-05-07 00:00:00
 2020-05-24 14:39:56.628383: URL is valid
 2020-05-24 14:39:56.636748: Sending Slack message...
 2020-05-24 14:39:57.480257: 200
+2020-06-06 17:51:56.614671: Querying Google
+2020-06-06 17:51:57.416769: Searching for COD Patch Notes
+2020-06-06 17:51:57.425182: Found: url?q=https://www.infinityward.com/news/2020-05/MW_Patch_Notes_May_18&amp;s
+2020-06-06 17:51:57.425535: Check date of patch notes in rgex line: url?q=https://www.infinityward.com/news/2020-05/MW_Patch_Notes_May_18&amp;s
+2020-06-06 17:51:57.426205: Found: 2020-05
+2020-06-06 17:51:57.426531: Getting second part of date
+2020-06-06 17:51:57.426785: Month found May
+2020-06-06 17:51:57.427463: Second part of date: May_18
+2020-06-06 17:51:57.429480: Formatting Dates
+2020-06-06 17:51:57.429845: Reading last date from file..
+2020-06-06 17:51:57.430609: Last date from file: 2020-05-1
+2020-06-06 17:51:57.431175: Current Date: 2020-05-18
+Previous Date: 2020-05-1
+2020-06-06 17:51:57.434856: Current Date Converted: 2020-05-18 00:00:00
+2020-06-06 17:51:57.434878: Previous Date Converted: 2020-05-01 00:00:00
+2020-06-06 17:51:57.435214: Update Available!
+2020-06-06 17:51:57.435422: Saving most recent patch date to file: 2020-05-18
+2020-06-06 17:51:57.436022: Generating URL
+2020-06-06 17:51:57.436270: Generated: https://www.infinityward.com/news/2020-05/MW_Patch_Notes_May_18
+2020-06-06 17:51:57.783132: URL is valid
+2020-06-06 17:51:57.783501: Sending Slack message...
+2020-06-06 17:51:58.278952: 200
+2020-06-11 09:27:57.057259: Querying Google
+2020-06-11 09:27:57.924704: Searching for COD Patch Notes
+2020-06-11 09:27:57.925943: Found: url?q=https://www.infinityward.com/news/2020-06/MW_Patch_Notes_June_10&amp;
+2020-06-11 09:27:57.926396: Check date of patch notes in rgex line: url?q=https://www.infinityward.com/news/2020-06/MW_Patch_Notes_June_10&amp;
+2020-06-11 09:27:57.926906: Found: 2020-06
+2020-06-11 09:27:57.927185: Getting second part of date
+2020-06-11 09:27:57.927391: Month found Jun
+2020-06-11 09:29:01.230290: Querying Google
+2020-06-11 09:29:02.093395: Searching for COD Patch Notes
+2020-06-11 09:29:02.103207: Found: url?q=https://www.infinityward.com/news/2020-06/MW_Patch_Notes_June_10&amp;
+2020-06-11 09:29:02.103964: Check date of patch notes in rgex line: url?q=https://www.infinityward.com/news/2020-06/MW_Patch_Notes_June_10&amp;
+2020-06-11 09:29:02.104834: Found: 2020-06
+2020-06-11 09:29:02.105187: Getting second part of date
+2020-06-11 09:29:02.105408: Month found Jun
+2020-06-11 09:29:54.849107: Querying Google
+2020-06-11 09:29:55.749916: Searching for COD Patch Notes
+2020-06-11 09:29:55.759024: Found: url?q=https://www.infinityward.com/news/2020-06/MW_Patch_Notes_June_10&amp;
+2020-06-11 09:29:55.759370: Check date of patch notes in rgex line: url?q=https://www.infinityward.com/news/2020-06/MW_Patch_Notes_June_10&amp;
+2020-06-11 09:29:55.759955: Found: 2020-06
+2020-06-11 09:29:55.760196: Getting second part of date
+2020-06-11 09:29:55.760431: Month found Jun
+2020-06-11 09:31:30.392648: Querying Google
+2020-06-11 09:31:32.148875: Searching for COD Patch Notes
+2020-06-11 09:31:32.158000: Found: url?q=https://www.infinityward.com/news/2020-06/MW_Patch_Notes_June_10&amp;
+2020-06-11 09:31:32.158348: Check date of patch notes in rgex line: url?q=https://www.infinityward.com/news/2020-06/MW_Patch_Notes_June_10&amp;
+2020-06-11 09:31:32.158938: Found: 2020-06
+2020-06-11 09:31:32.159172: Getting second part of date
+2020-06-11 09:31:32.159388: Month found June
+2020-06-11 09:31:32.159806: Second part of date: June_10
+2020-06-11 09:31:32.160045: Formatting Dates
+2020-06-11 09:31:32.160323: Reading last date from file..
+2020-06-11 09:31:32.160752: Last date from file: 2020-05-18
+2020-06-11 09:31:32.160934: Current Date: 2020-06-10
+Previous Date: 2020-05-18
+2020-06-11 09:31:32.163679: Current Date Converted: 2020-06-10 00:00:00
+2020-06-11 09:31:32.163695: Previous Date Converted: 2020-05-18 00:00:00
+2020-06-11 09:31:32.163950: Update Available!
+2020-06-11 09:31:32.164105: Saving most recent patch date to file: 2020-06-10
+2020-06-11 09:31:32.164830: Generating URL
+2020-06-11 09:31:32.164998: Generated: https://www.infinityward.com/news/2020-06/MW_Patch_Notes_June_10
+2020-06-11 09:31:32.505451: URL is valid
+2020-06-11 09:31:32.513961: Sending Slack message...
+2020-06-11 09:31:32.992634: 200
+2020-06-11 09:34:19.056369: Querying Google
+2020-06-11 09:34:20.006571: Searching for COD Patch Notes
+2020-06-11 09:34:20.015700: Found: url?q=https://www.infinityward.com/news/2020-06/MW_Patch_Notes_June_10&amp;
+2020-06-11 09:34:20.016045: Check date of patch notes in rgex line: url?q=https://www.infinityward.com/news/2020-06/MW_Patch_Notes_June_10&amp;
+2020-06-11 09:34:20.016571: Found: 2020-06
+2020-06-11 09:34:20.016799: Getting second part of date
+2020-06-11 09:34:20.017012: Month found June
+2020-06-11 09:34:20.017427: Second part of date: June_10
+2020-06-11 09:34:20.017651: Formatting Dates
+2020-06-11 09:34:20.017850: Reading last date from file..
+2020-06-11 09:34:20.018150: Last date from file: 2020-06-10
+2020-06-11 09:34:20.018342: Current Date: 2020-06-10
+Previous Date: 2020-06-10
+2020-06-11 09:34:20.020438: Current Date Converted: 2020-06-10 00:00:00
+2020-06-11 09:34:20.020451: Previous Date Converted: 2020-06-10 00:00:00
+2020-06-11 09:34:20.020658: No update available
+2020-10-26 17:57:49.346180: Querying Google
+2020-10-26 17:57:50.245581: Searching for COD Patch Notes
+2020-10-26 17:58:09.145484: Querying Google
+2020-10-26 17:58:10.305360: Searching for COD Patch Notes
+2020-10-26 18:00:12.150210: Querying Google
+2020-10-26 18:00:13.567994: Searching for COD Patch Notes
+2020-10-26 18:00:33.398805: Querying Google
+2020-10-26 18:00:34.457214: Searching for COD Patch Notes
+2020-10-26 18:00:34.466311: Found: url?q=https://www.infinityward.com/news/2019-10/Modern_Warfare_Patch_Notes
+2020-10-26 18:00:34.466956: Check date of patch notes in rgex line: url?q=https://www.infinityward.com/news/2019-10/Modern_Warfare_Patch_Notes
+2020-10-26 18:00:34.467807: Found: 2019-10
+2020-10-26 18:00:34.468293: Getting second part of date
+2020-10-26 18:00:34.468729: Month not found
+2020-10-26 18:00:34.469171: Formatting Dates
+2020-10-26 18:04:48.687938: Querying Google
+2020-10-26 18:04:49.453244: Searching for COD Patch Notes
+2020-10-26 18:05:17.067910: Querying Google
+2020-10-26 18:05:17.887605: Searching for COD Patch Notes
+2020-10-26 18:05:17.896843: Found: url?q=https://www.infinityward.com/news/2020-10/MODERN_WARFARE_WARZONE_PATCH_NOTES_OCT_8TH
+2020-10-26 18:05:17.897176: Check date of patch notes in rgex line: url?q=https://www.infinityward.com/news/2020-10/MODERN_WARFARE_WARZONE_PATCH_NOTES_OCT_8TH
+2020-10-26 18:05:17.897660: Found: 2020-10
+2020-10-26 18:05:17.897880: Getting second part of date
+2020-10-26 18:05:17.898089: Month not found
+2020-10-26 18:05:17.898290: Formatting Dates
+2020-10-26 18:07:21.541574: Querying Google
+2020-10-26 18:07:23.270246: Searching for COD Patch Notes
+2020-10-26 18:07:23.279454: Found: https://www.infinityward.com/news/2020-10/MODERN_WARFARE_WARZONE_PATCH_NOTES_OCT_8TH
+2020-10-26 18:07:23.279795: Check date of patch notes in rgex line: https://www.infinityward.com/news/2020-10/MODERN_WARFARE_WARZONE_PATCH_NOTES_OCT_8TH
+2020-10-26 18:07:23.280313: Found: 2020-10
+2020-10-26 18:07:23.280546: Getting second part of date
+2020-10-26 18:07:23.280769: Month not found
+2020-10-26 18:07:23.280992: Formatting Dates
+2020-10-26 18:10:26.510886: Querying Google
+2020-10-26 18:10:27.560929: Searching for COD Patch Notes
+2020-10-26 18:10:27.561781: Found: https://www.infinityward.com/news/2020-10/MODERN_WARFARE_WARZONE_PATCH_NOTES_OCT_8TH
+2020-10-26 18:10:27.561958: Check date of patch notes in rgex line: https://www.infinityward.com/news/2020-10/MODERN_WARFARE_WARZONE_PATCH_NOTES_OCT_8TH
+2020-10-26 18:10:27.562299: Found: 2020-10
+2020-10-26 18:10:27.562482: Getting second part of date
+2020-10-26 18:10:27.562660: Month found oct
+2020-10-26 18:11:48.441286: Querying Google
+2020-10-26 18:11:49.374359: Searching for COD Patch Notes
+2020-10-26 18:11:49.383469: Found: https://www.infinityward.com/news/2020-10/MODERN_WARFARE_WARZONE_PATCH_NOTES_OCT_8TH
+2020-10-26 18:11:49.383796: Check date of patch notes in rgex line: https://www.infinityward.com/news/2020-10/MODERN_WARFARE_WARZONE_PATCH_NOTES_OCT_8TH
+2020-10-26 18:11:49.384269: Found: 2020-10
+2020-10-26 18:11:49.384493: Getting second part of date
+2020-10-26 18:11:49.384713: Month found oct
+2020-10-26 18:12:04.561386: Querying Google
+2020-10-26 18:12:06.110279: Searching for COD Patch Notes
+2020-10-26 18:12:06.119500: Found: https://www.infinityward.com/news/2020-10/MODERN_WARFARE_WARZONE_PATCH_NOTES_OCT_8TH
+2020-10-26 18:12:06.119830: Check date of patch notes in rgex line: https://www.infinityward.com/news/2020-10/MODERN_WARFARE_WARZONE_PATCH_NOTES_OCT_8TH
+2020-10-26 18:12:06.120345: Found: 2020-10
+2020-10-26 18:12:06.120577: Getting second part of date
+2020-10-26 18:12:06.120796: Month found oct
+2020-10-26 18:13:48.136398: Querying Google
+2020-10-26 18:13:49.087148: Searching for COD Patch Notes
+2020-10-26 18:13:49.095651: Found: https://www.infinityward.com/news/2020-10/MODERN_WARFARE_WARZONE_PATCH_NOTES_OCT_8TH
+2020-10-26 18:13:49.096052: Check date of patch notes in rgex line: https://www.infinityward.com/news/2020-10/MODERN_WARFARE_WARZONE_PATCH_NOTES_OCT_8TH
+2020-10-26 18:13:49.096571: Found: 2020-10
+2020-10-26 18:13:49.096794: Getting second part of date
+2020-10-26 18:13:49.097010: Month found oct
+2020-10-26 18:13:49.097420: Second part of date: OCT_8
+2020-10-26 18:13:49.097636: Formatting Dates
+2020-10-26 18:13:49.097827: Reading last date from file..
+2020-10-26 18:13:49.098755: Last date from file: 2020-06-10
+2020-10-26 18:13:49.099117: Current Date: 2020-10-8
+Previous Date: 2020-06-10
+2020-10-26 18:13:49.102015: Current Date Converted: 2020-10-08 00:00:00
+2020-10-26 18:13:49.102029: Previous Date Converted: 2020-06-10 00:00:00
+2020-10-26 18:13:49.102474: Update Available!
+2020-10-26 18:13:49.102646: Saving most recent patch date to file: 2020-10-8
+2020-10-26 18:13:49.103369: Generating URL
+2020-10-26 18:13:49.103525: Generated: https://www.infinityward.com/news/2020-10/MW_Patch_Notes_OCT_8
+2020-10-26 18:13:50.080803: Incorrect URL generated
+2020-10-26 18:15:40.213896: Querying Google
+2020-10-26 18:15:40.957588: Searching for COD Patch Notes
+2020-10-26 18:15:40.966786: Found: https://www.infinityward.com/news/2020-10/MODERN_WARFARE_WARZONE_PATCH_NOTES_OCT_8TH
+2020-10-26 18:15:40.967134: Check date of patch notes in rgex line: https://www.infinityward.com/news/2020-10/MODERN_WARFARE_WARZONE_PATCH_NOTES_OCT_8TH
+2020-10-26 18:15:40.967651: Found: 2020-10
+2020-10-26 18:15:40.967884: Getting second part of date
+2020-10-26 18:15:40.968116: Month found oct
+2020-10-26 18:15:40.968551: Second part of date: OCT_8
+2020-10-26 18:15:40.968779: Formatting Dates
+2020-10-26 18:15:40.968987: Reading last date from file..
+2020-10-26 18:15:40.969675: Last date from file: 2020-10-8
+2020-10-26 18:15:40.969987: Current Date: 2020-10-8
+Previous Date: 2020-10-8
+2020-10-26 18:15:40.973626: Current Date Converted: 2020-10-08 00:00:00
+2020-10-26 18:15:40.973647: Previous Date Converted: 2020-10-08 00:00:00
+2020-10-26 18:15:40.973924: No update available
+2020-10-26 18:16:18.024405: Querying Google
+2020-10-26 18:16:18.986158: Searching for COD Patch Notes
+2020-10-26 18:16:18.995331: Found: https://www.infinityward.com/news/2020-10/MODERN_WARFARE_WARZONE_PATCH_NOTES_OCT_8TH
+2020-10-26 18:16:18.995659: Check date of patch notes in rgex line: https://www.infinityward.com/news/2020-10/MODERN_WARFARE_WARZONE_PATCH_NOTES_OCT_8TH
+2020-10-26 18:16:18.996171: Found: 2020-10
+2020-10-26 18:16:18.996400: Getting second part of date
+2020-10-26 18:16:18.996639: Month found oct
+2020-10-26 18:16:18.997085: Second part of date: OCT_8
+2020-10-26 18:16:18.997313: Formatting Dates
+2020-10-26 18:16:18.997509: Reading last date from file..
+2020-10-26 18:16:18.997810: Last date from file: 2020-10-2
+2020-10-26 18:16:18.998057: Current Date: 2020-10-8
+Previous Date: 2020-10-2
+2020-10-26 18:16:19.000147: Current Date Converted: 2020-10-08 00:00:00
+2020-10-26 18:16:19.000160: Previous Date Converted: 2020-10-02 00:00:00
+2020-10-26 18:16:19.000355: Update Available!
+2020-10-26 18:16:19.000497: Saving most recent patch date to file: 2020-10-8
+2020-10-26 18:16:19.000890: Generating URL
+2020-10-26 18:16:19.001025: Generated: https://www.infinityward.com/news/2020-10/MODERN_WARFARE_WARZONE_PATCH_NOTES_OCT_8TH
+2020-10-26 18:16:19.149342: URL is valid
+2020-10-26 18:16:19.156958: Sending Slack message...
+2020-10-26 18:16:19.494749: 200

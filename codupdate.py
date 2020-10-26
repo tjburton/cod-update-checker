@@ -9,11 +9,12 @@ import json
 class CheckLatestCODUpdate:
     def __init__(self):
         self.url = None
-        self.loc = "./"
+        self.loc = "./resources"
         self.current_patch_date = None
         self.previous_date = None
         self.first_date = None
         self.second_date = None
+        self.url = None
 
     def query_google(self):
         print("Querying Google")
@@ -25,9 +26,10 @@ class CheckLatestCODUpdate:
     def search_for_cod_patch_notes(self, res):
         print("Searching for COD Patch Notes")
         self.output_message_to_logfile(f"{datetime.today()}: Searching for COD Patch Notes")
-        pattern = '(url\?q=https:\/\/www\.infinityward\.com\/news\/[0-9][0-9][0-9][0-9]-[0-9][0-9]\/MW_Patch_Notes_[A-Z][a-z]..........)'
+        pattern = '(https:\/\/www\.infinityward\.com\/news\/[0-9][0-9][0-9][0-9]-[0-9][0-9]\/.*_PATCH_NOTES_..._...)'
         x = re.search(pattern, res)
         self.output_message_to_logfile(f"{datetime.today()}: Found: {x.group(0)}")
+        self.url = x.group(0);
         return x.group(0)
 
     def get_first_part_of_date(self, response):
@@ -42,10 +44,10 @@ class CheckLatestCODUpdate:
         print(f"Check date of patch notes in regex line: {response}")
         self.output_message_to_logfile(f"{datetime.today()}: Getting second part of date")
         for month in months:
-            if month in response:
+            if month in response.lower():
                 print(f"Month found: {month}")
                 self.output_message_to_logfile(f"{datetime.today()}: Month found {month}")
-                pattern = f'({month}_[0-9].)'
+                pattern = f'({month.upper()}_[0-9].)'
                 second_part_of_date = re.search(pattern, response).group(0)
 
                 if second_part_of_date[-1].isdigit():
@@ -103,7 +105,7 @@ class CheckLatestCODUpdate:
         print("Generating URL...")
         self.output_message_to_logfile(f"{datetime.today()}: Generating URL")
         global url
-        url = f"https://www.infinityward.com/news/{first_date}/MW_Patch_Notes_{second_date}"
+        url = self.url
         print(f"Generated: {url}")
         self.output_message_to_logfile(f"{datetime.today()}: Generated: {url}")
         return url
